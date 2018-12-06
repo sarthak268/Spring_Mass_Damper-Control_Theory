@@ -47,7 +47,7 @@ class armDynamics:
         # re-label states and inputs for readability
         theta = state.item(0)
         thetadot = state.item(1)
-        tau = u
+        tau = u[0]
         # The equations of motion.
         #thetaddot = (3.0/self.m/self.ell**2)*(tau - self.b*thetadot - self.m*self.g*self.ell/2.0*np.cos(theta))
         thetaddot = (1/self.m)*(tau - self.b*thetadot - self.k*theta)

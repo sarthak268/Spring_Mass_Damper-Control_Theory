@@ -10,7 +10,7 @@ b = 0.5      # Damping coefficient, Nms
 k = 3		# Spring constant
 
 # parameters for animation
-length = 1    # length of arm in animation
+length = 5    # length of arm in animation
 width = 0.3   # width of arm in animation
 
 # Initial Conditions

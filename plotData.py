@@ -26,8 +26,8 @@ class plotData:
 
         # create a handle for every subplot.
         self.handle = []
-        self.handle.append(myPlot(self.ax[0], ylabel='theta(deg)', title='Arm Data'))
-        self.handle.append(myPlot(self.ax[1], xlabel='t(s)', ylabel='torqe(N-m)'))
+        self.handle.append(myPlot(self.ax[0], ylabel='z (m)', title='Block Data'))
+        self.handle.append(myPlot(self.ax[1], xlabel='t (s)', ylabel='Force (N)'))
 
     def updatePlots(self, t, reference, states, ctrl):
         '''
